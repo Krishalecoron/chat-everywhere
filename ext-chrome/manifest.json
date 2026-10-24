@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Chat Everywhere - Floating Workspace",
+  "version": "3.0.0",
+  "description": "Floating chat dashboard with media, groups, shares, and quick tools.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
